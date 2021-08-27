@@ -1,0 +1,12 @@
+//在变量less代码块的选择器后加个括号，less将不会被编译
+.vable(){
+  margin: 10px;
+}
+
+.inner {
+  .vable;
+}
+
+.inner2 {
+  vable;
+}
