@@ -1,0 +1,18 @@
+ //引入vable文件，每次使用.vable是会自动引入@_的.vable
+ .vable(@_,@margin-left-base,@margin-right-base){
+  margin: 10px;
+ }
+ 
+.vable(@margin-left-base:10px,@margin-right-base:10px){
+  margin-left: @margin-left-base;
+  margin-right: @marign-right-base;
+}
+
+@import './vable.less'
+.inner {
+  .vable(10px,10px);
+}
+
+.inner2 {
+  vable(@margin-right-base: 10px);
+}
