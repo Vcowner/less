@@ -1,0 +1,13 @@
+//为混合添加参数
+.vable(@margin-left-base){
+  margin: 10px;
+  margin-left: @margin-left-base;
+}
+
+.inner {
+  .vable(10px);
+}
+
+.inner2 {
+  vable(10px);
+}
