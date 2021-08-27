@@ -1,0 +1,8 @@
+//伪参数，可带代替多个参数
+.vable(@width,@color,@border){
+ border: @arguments;
+}
+
+.inner {
+  .vable(10px,black,solid);
+}
