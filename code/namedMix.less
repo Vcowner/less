@@ -1,0 +1,13 @@
+//为指定属性值提供参数
+.vable(@margin-left-base:10px,@margin-right-base:10px){
+  margin: 10px;
+  margin-left: @margin-left-base;
+  margin-right: @marign-right-base;
+}
+
+.inner {
+  .vable(10px,10px);
+}
+.inner2 {
+  vable(@margin-right-base: 10px);
+}
