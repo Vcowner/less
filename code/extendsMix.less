@@ -1,0 +1,25 @@
+//引入vable文件，使用extend继承vable 注意权重问题
+ .vable(){
+  margin: 10px;
+ }
+
+
+@import './vable.less'
+.inner:extend(.vable) {
+ .inner2 {
+  border: 1px solid black;
+ } 
+  .inne32 {
+  border: 1px solid black;
+ } 
+}
+
+//两个是一样的
+.inner {
+  &:extend(.vable)
+}
+
+//继承vable相关的所有语法 :hover之类的
+.inner {
+  &:extend(.vable all)
+}
